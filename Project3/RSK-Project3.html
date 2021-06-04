@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharath Project - 2 Template</title>
+    <meta name="description" content="Sharath Project - 2">
+    <meta name="keywords" content="Sharath Project - 2 Template">
+    <meta name="author" content="Sharath Kumar">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            position: relative;
+        }
+
+        .wrapper .sidebar{
+            position: fixed;
+            width:20%;
+            height: 100%;
+            background-color: #5b5f5f;
+            color: white;
+            border: solid 1px;
+            padding: 2%;
+        }
+
+        .wrapper .sidebar h3{
+            margin-bottom: 0px;
+            font-size: 22px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif; 
+        }
+
+        .wrapper .sidebar h5{
+            margin-top: 5px;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .wrapper .sidebar ul{
+            padding-left: 0px;
+        }
+        
+        .wrapper .sidebar ul li{
+            padding: 15px;
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .wrapper .sidebar ul li a{
+            color: whitesmoke;
+            display: block;
+            text-decoration: none;
+        }
+
+        .wrapper .sidebar ul li a .fa{
+            width: 20%;
+        }
+
+        .wrapper .sidebar ul li:hover{
+            background-color:#2f3031ee;
+        }
+
+        .main {
+            margin-left: 20%;
+        }
+
+        .main-content1 {
+            position: relative;
+            text-align: left;
+            color: white;
+        }   
+
+        .main-content1-text {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            padding: 0% 10%;  
+        }  
+
+        .main-content2 {
+            border-bottom: 2px solid #ee675eee;
+            padding-bottom: 2%;
+        }
+
+        .border {
+            padding: 2% 5%;
+        }
+
+        .main-content3 {
+            padding-top: 2%;
+            padding-bottom: 5%;
+            border-bottom: 2px solid #ee675eee;
+        }
+
+        .main-content3 img{
+            width: 100%;
+        }
+
+        .main-content3-pics{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 4% 2%;
+        }
+
+        .main-content4-inputs div{
+            padding: 1% 0;
+        }
+
+        .main-content4-inputs1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-content4-inputs1 input{
+            width: 30%;
+            border: solid 1px;
+            padding: 1%;
+        }
+
+        .main-content4-inputs2 textarea {
+            width: 100%;
+            border: solid 1px;
+            padding: 1%;
+        }
+
+        .main-content4-inputs button{
+            padding: 0.5%;
+        }
+
+        .main-content4 {
+            padding-top: 2%;
+            padding-bottom: 5%;
+            border-bottom: 2px solid #ee675eee; 
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        @media (max-width: 575px){
+            .wrapper .sidebar h3{
+                font-size: 2vw; 
+            }
+
+            .wrapper .sidebar h5{
+                font-size: 1.6vw;
+            }
+
+            .wrapper .sidebar ul li{
+                font-size: 1.9vw;
+                padding: 10px;
+            }
+
+            .main-content1-text{
+                font-size: 1.6vw;
+            }
+
+            .main-content2, .main-content3, .main-content4, .main-content4-inputs input, .main-content4-inputs textarea, .main-content4-inputs button, .footer{
+                font-size: 1.8vw;
+            }
+
+            .main-content3-pics{
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 1%;
+                width: 100%;
+                padding: 0% 8%;   
+            }
+
+            .main-content3 {
+                padding-bottom: 22%;
+            }
+
+            .main-content4-inputs1 {
+                display: block;
+            }
+
+            .main-content4-inputs1 input, .main-content4-inputs2 textarea {
+                width: 100%;
+                border: solid 1px;
+                padding: 1%;
+                margin: 1%;
+            }
+
+            .main-content4-inputs button{
+                margin: 1%;
+                padding: 0.5%;
+            }
+        }
+
+        @media (min-width:576px) and (max-width:992px) {
+            .wrapper .sidebar h3{
+                font-size: 2vw; 
+            }
+
+            .wrapper .sidebar h5{
+                font-size: 1.6vw;
+            }
+
+            .wrapper .sidebar ul li{
+                font-size: 1.8vw;
+            }
+
+            .main-content1-text{
+                font-size: 1.6vw;
+            }
+
+            .main-content2, .main-content3, .main-content4, .main-content4-inputs input, .main-content4-inputs textarea, .main-content4-inputs button, .footer{
+                font-size: 1.7vw;
+            }
+
+            .main-content3-pics{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 2% 2%;
+            }
+        }
+
+        @media only screen and (min-width:1400px){
+            .wrapper .sidebar h3{
+                font-size: 1.8vw; 
+            }
+
+            .wrapper .sidebar h5{
+                font-size: 1.6vw;
+            }
+
+            .wrapper .sidebar ul li{
+                font-size: 1.6vw;
+            }
+
+            .main-content1-text{
+                font-size: 1.5vw;
+            }
+
+            .main-content2, .main-content3, .main-content4, .main-content4-inputs input, .main-content4-inputs textarea, .main-content4-inputs button, .footer{
+                font-size: 1.7vw;
+            }
+        }  
+
+        .social {
+            display: flex;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="Pictures/accountpic.png" alt="My Pic" width="60%">
+                <h3>Sharath Kumar Damodaran</h3>    
+                <h5>Nature Photography</h5>
+            <ul>
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></i>Welcome</a></li>
+                <li><a href="#"><i class="fa fa-pen" aria-hidden="true"></i></i>About Me</a></li>
+                <li><a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i>My Gallery</a></li>
+                <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Me</a></li>
+            </ul>
+            
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img src="Pictures/facebook.png" alt="facebook" width="70%"></a>
+                <a href="https://www.google.com" target="_blank"><img src="Pictures/google.png" alt="google" width="70%"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Pictures/instagram.png" alt="instagram" width="70%"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="Pictures/twitter.png" alt="twitter" width="70%"></a> 
+                <a href="https://www.linkedin.com" target="_blank"><img src="Pictures/linkedin.png" alt="linkedin" width="70%"></a>
+            </div>
+        
+        </div>
+
+        <div class="main">
+            <div class="main-content1">
+                <div><img src="Pictures/backgroundimg.jpg" alt="background Header Image" width="100%"></div>
+                <div class="main-content1-text">
+                    <h1>WELCOME | This is my Photography...!!!</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio fugit esse aspernatur, perspiciatis fuga in officiis sunt doloribus deleniti qui tenetur? Deserunt quasi expedita nesciunt vero vitae labore dicta voluptate.</p>
+                </div>
+            </div>
+            <div class="border">
+                <div class="main-content2">
+                    <h3>About Me</h3>
+                    <img src="Pictures/aboutme.jpg" alt="My Pic" width="100%">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi suscipit cumque vero. Totam reiciendis illum voluptate, sapiente voluptatum repudiandae necessitatibus temporibus eius nesciunt. Nemo, fuga. Asperiores, repellendus doloribus accusamus explicabo earum ullam magnam nesciunt modi placeat deserunt cum totam nam debitis nobis autem eveniet molestiae inventore praesentium iusto eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio fugit esse aspernatur, perspiciatis fuga in officiis sunt doloribus deleniti qui tenetur? Deserunt quasi expedita nesciunt vero vitae labore dicta voluptate.</p>    
+                </div>
+
+                <div class="main-content3">
+                    <h3>Photographs by Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, libero? Libero quisquam, fugiat minima ducimus nobis reprehenderit obcaecati, porro ipsa sint provident pariatur. Laborum tempora eius necessitatibus ut ipsum nam!</p>
+                    <div class="main-content3-pics">
+                        <img src="Pictures/p6.jpg" alt="Pic1">
+                        <img src="Pictures/p2.jpg" alt="Pic2">
+                        <img src="Pictures/p3.jpg" alt="Pic3">
+                        <img src="Pictures/p4.jpg" alt="Pic4">
+                        <img src="Pictures/p5.jpg" alt="Pic5">
+                        <img src="Pictures/p6.jpg" alt="Pic6"> 
+                    </div>        
+                </div>
+
+                <div class="main-content4">
+                    <h3>Place To Talk With Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, libero? Libero quisquam, fugiat minima ducimus nobis reprehenderit obcaecati, porro ipsa sint provident pariatur. Laborum tempora eius necessitatibus ut ipsum nam!</p>
+                    
+                    <form class="main-content4-inputs">
+                        <div class="main-content4-inputs1">
+                            <input type="text" name="yourname" placeholder="Your Name...">
+                            <input type="email" name="email" placeholder="Your Email...">
+                            <input type="text" name="subject" placeholder="Subject...">   
+                        </div> 
+                        <div class="main-content4-inputs2">
+                            <textarea name="text" id="" rows="5" placeholder="Enter Your Message..."></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>  
+                    </form>
+                </div>
+
+                <div class="footer">
+                    <p>&#169 Copyright 2021.</p>
+                </div>
+            </div>    
+        </div> 
+    </div>
+</html>
